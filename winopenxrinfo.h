@@ -5,13 +5,16 @@
 #include <QDialog>
 #include <QLabel>
 #include <QPushButton>
+#include <QMessageBox>
 
 class WinOpenXRInfo : public QDialog
 {
     Q_OBJECT
 
     QLabel* runtimeInfoDisplay = nullptr;
-    QHBoxLayout* masterLayout = nullptr;
+    QLabel* runtimeManifestPath = nullptr;
+    QLabel* runtimeLibaryPath = nullptr;
+
     QVBoxLayout* windowform = nullptr;
     QPushButton* quitButton = nullptr;
 public:
